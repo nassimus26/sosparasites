@@ -125,12 +125,9 @@ require_once __DIR__ . '/lang.php';
                 </nav>
 
                 <div class="hidden sm:flex items-center gap-3">
-                    <a href="<?= PHONE_TEL ?>" class="bg-red-600 hover:bg-red-700 text-white px-5 py-2.5 rounded-xl font-bold text-sm shadow-md transition flex items-center gap-2 animate-pulse-call">
+                    <a href="<?= PHONE_TEL ?>" class="bg-red-600 hover:bg-red-700 text-white px-5 py-3 rounded-xl font-bold text-sm shadow-md transition flex items-center gap-2.5 animate-pulse-call">
                         <i data-lucide="phone" class="w-4 h-4"></i>
-                        <div class="text-left">
-                            <span class="block text-[10px] uppercase font-bold text-red-200 leading-none"><?= __('free_call') ?></span>
-                            <span class="text-base font-extrabold leading-none"><?= PHONE_DISPLAY ?></span>
-                        </div>
+                        <span class="text-lg font-black tracking-wide"><?= PHONE_DISPLAY ?></span>
                     </a>
                 </div>
 
