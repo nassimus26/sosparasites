@@ -57,6 +57,7 @@ lftp -e "
     rm -rf www/.next 2>/dev/null || true;
     rm -rf www/.idea 2>/dev/null || true;
     rm -rf www/.git 2>/dev/null || true;
+    rm -f www/index.html 2>/dev/null || true;
 
     quit;
 "

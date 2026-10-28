@@ -56,10 +56,9 @@ require_once __DIR__ . '/includes/header.php';
                     </a>
                 </div>
 
-                <div class="pt-4 grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs sm:text-sm text-slate-300 font-medium">
+                <div class="pt-4 grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs sm:text-sm text-slate-300 font-medium">
                     <div class="flex items-center gap-2 justify-center lg:justify-start"><i data-lucide="clock" class="w-4 h-4 text-red-400"></i> <?= __('benefit_1') ?></div>
                     <div class="flex items-center gap-2 justify-center lg:justify-start"><i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i> <?= __('benefit_2') ?></div>
-                    <div class="flex items-center gap-2 justify-center lg:justify-start"><i data-lucide="award" class="w-4 h-4 text-amber-400"></i> <?= __('benefit_3') ?></div>
                     <div class="flex items-center gap-2 justify-center lg:justify-start"><i data-lucide="map-pin" class="w-4 h-4 text-sky-400"></i> <?= __('benefit_4') ?></div>
                 </div>
 

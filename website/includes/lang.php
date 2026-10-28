@@ -170,7 +170,6 @@ $translations = [
         'request_quote' => 'Request Online Quote',
         'benefit_1' => '1H Response',
         'benefit_2' => 'Certified Biocide',
-        'benefit_3' => 'Guaranteed Results',
         'benefit_4' => 'IDF, Marseille & Lyon',
         'pests_list_title' => 'Emergency Pest Services:',
 
