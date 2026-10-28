@@ -68,7 +68,7 @@ require_once __DIR__ . '/../protected/config.php';
                     <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-3">Informations</h4>
                     <ul class="space-y-1.5 text-xs">
                         <li><a href="/tarifs.php" class="hover:text-white transition">Pourquoi Pas de Tarif Fixe ?</a></li>
-                        <li><a href="/partenaires.php" class="hover:text-sky-400 font-bold text-sky-400 transition">Espace Sous-Traitants</a></li>
+                        <li><a href="/nous-rejoindre.php" class="hover:text-sky-400 font-bold text-sky-400 transition">Partenaires</a></li>
                         <li><a href="/devis.php" class="hover:text-white transition">Calculateur de Devis</a></li>
                         <li><a href="/#processus" class="hover:text-white transition">Notre Méthode</a></li>
                         <li><a href="/#contact" class="hover:text-white transition">Formulaire Contact</a></li>

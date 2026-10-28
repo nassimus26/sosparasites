@@ -27,8 +27,8 @@ require_once __DIR__ . '/includes/header.php';
         <div class="bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 text-white rounded-3xl p-8 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
                 <span class="bg-sky-500 text-slate-950 text-xs font-black uppercase px-3 py-1 rounded-full">Grandes Métropoles</span>
-                <h3 class="text-3xl font-black text-white mt-2">Marseille & Lyon</h3>
-                <p class="text-slate-300 text-sm mt-1">Intervention urgente 24h/24 dans tous les arrondissements de Marseille et de Lyon ainsi que dans leurs agglomérations.</p>
+                <h3 class="text-3xl font-black text-white mt-2">Paris, Marseille & Lyon</h3>
+                <p class="text-slate-300 text-sm mt-1">Intervention urgente 24h/24 dans tous les arrondissements de Paris, Marseille et de Lyon ainsi que dans leurs agglomérations.</p>
             </div>
             <a href="<?= PHONE_TEL ?>" class="bg-red-600 hover:bg-red-700 text-white font-extrabold px-6 py-3.5 rounded-2xl shadow-lg transition flex items-center gap-2 shrink-0">
                 <i data-lucide="phone" class="w-5 h-5"></i> Appeler Un Expert (<?= PHONE_DISPLAY ?>)

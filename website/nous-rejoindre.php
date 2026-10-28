@@ -1,13 +1,13 @@
 <?php
 /**
- * Partners / Subcontractors Page - SOS PARASITES (PHP 8)
+ * Nous Rejoindre (Partners / Subcontractors Page) - SOS PARASITES (PHP 8)
  */
 declare(strict_types=1);
 
 require_once __DIR__ . '/protected/config.php';
 require_once __DIR__ . '/includes/lang.php';
 
-$pageTitle = "Espace Partenaires & Sous-Traitants | SOS PARASITES - France entière";
+$pageTitle = "Nous Rejoindre | SOS PARASITES - Réseau National Sous-Traitants";
 $pageDesc = "Rejoignez notre réseau national de techniciens indépendants et sous-traitants en désinsectisation et dératisation. Recevez des missions qualifiées.";
 
 require_once __DIR__ . '/includes/header.php';
@@ -66,7 +66,7 @@ require_once __DIR__ . '/includes/header.php';
 
 <!-- Partner Application Form Section -->
 <section id="candidature" class="py-16 sm:py-24 bg-slate-50">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-xl border border-gray-200">
 
             <div class="text-center mb-8">

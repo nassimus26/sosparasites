@@ -31,7 +31,7 @@ $translations = [
         'nav_zones' => 'Zones d\'Intervention',
         'nav_process' => 'Notre Méthode',
         'nav_contact' => 'Contact & Devis',
-        'nav_partners' => 'Espace Partenaires / Sous-Traitants',
+        'nav_partners' => 'Partenaires',
         'free_call' => 'Appel Gratuit 24/7',
 
         // Hero
@@ -112,7 +112,7 @@ $translations = [
         'label_company' => 'Société / Nom complet *',
         'label_region' => 'Département / Région d\'intervention *',
         'label_certibiocide' => 'Certificat Certibiocide *',
-        'label_experience' => 'Années d\'expérience en 3D (Dératisation...)',
+        'label_experience' => 'Années d\'expérience en lutte anti-nuisibles',
         'cert_yes' => 'Oui - Certificat valide',
         'cert_no' => 'En cours / Autre',
         'partner_submit_btn' => 'Soumettre Ma Candidature Partenaire',
@@ -135,7 +135,7 @@ $translations = [
         'nav_zones' => 'Coverage Areas',
         'nav_process' => 'Our Method',
         'nav_contact' => 'Contact & Quote',
-        'nav_partners' => 'Partners / Subcontractors',
+        'nav_partners' => 'Become a Partner',
         'free_call' => 'Free Call 24/7',
 
         // Hero
@@ -202,7 +202,7 @@ $translations = [
         'submit_btn' => 'Send Intervention Request',
 
         // Partners Page
-        'partner_hero_title' => 'Become a Partner or Subcontractor Technician',
+        'partner_hero_title' => 'Join our intervention teams across all of France',
         'partner_hero_desc' => 'Receive qualified pest control missions across all of France. Grow your business with SOS PARASITES.',
         'partner_benefits_title' => 'Why join our network?',
         'partner_b1_title' => 'Regular Missions',
