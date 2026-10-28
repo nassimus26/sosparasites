@@ -114,11 +114,12 @@ require_once __DIR__ . '/lang.php';
                     </div>
                 </a>
 
-                <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-gray-700">
+                <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-gray-700">
                     <a href="/" class="hover:text-red-600 transition"><?= __('nav_home') ?></a>
                     <a href="/#nuisibles" class="hover:text-red-600 transition"><?= __('nav_pests') ?></a>
                     <a href="/tarifs.php" class="hover:text-red-600 transition"><?= __('nav_tarifs') ?></a>
                     <a href="/zones.php" class="hover:text-red-600 transition"><?= __('nav_zones') ?></a>
+                    <a href="/partenaires.php" class="hover:text-sky-600 transition font-bold text-sky-700"><?= __('nav_partners') ?></a>
                     <a href="/#processus" class="hover:text-red-600 transition"><?= __('nav_process') ?></a>
                     <a href="/#contact" class="hover:text-red-600 transition"><?= __('nav_contact') ?></a>
                 </nav>
@@ -152,6 +153,7 @@ require_once __DIR__ . '/lang.php';
             <a href="/#nuisibles" class="block py-2 text-base font-semibold text-gray-800 hover:text-red-600"><?= __('nav_pests') ?></a>
             <a href="/tarifs.php" class="block py-2 text-base font-semibold text-gray-800 hover:text-red-600"><?= __('nav_tarifs') ?></a>
             <a href="/zones.php" class="block py-2 text-base font-semibold text-gray-800 hover:text-red-600"><?= __('nav_zones') ?></a>
+            <a href="/partenaires.php" class="block py-2 text-base font-semibold text-sky-700 hover:text-sky-800 font-bold"><?= __('nav_partners') ?></a>
             <a href="/#contact" class="block py-2 text-base font-semibold text-gray-800 hover:text-red-600"><?= __('nav_contact') ?></a>
             <div class="pt-2">
                 <a href="<?= PHONE_TEL ?>" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 rounded-xl shadow text-center flex items-center justify-center gap-2">

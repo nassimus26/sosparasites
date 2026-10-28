@@ -31,6 +31,7 @@ $translations = [
         'nav_zones' => 'Zones d\'Intervention',
         'nav_process' => 'Notre Méthode',
         'nav_contact' => 'Contact & Devis',
+        'nav_partners' => 'Espace Partenaires / Sous-Traitants',
         'free_call' => 'Appel Gratuit 24/7',
 
         // Hero
@@ -96,6 +97,26 @@ $translations = [
         'label_details' => 'Précisions',
         'submit_btn' => 'Envoyer Ma Demande D\'Intervention',
 
+        // Partners Page
+        'partner_hero_title' => 'Devenez Technicien Partenaire ou Sous-Traitant',
+        'partner_hero_desc' => 'Recevez des missions d\'intervention anti-nuisibles qualifiées dans toute la France. Développez votre activité avec SOS PARASITES.',
+        'partner_benefits_title' => 'Pourquoi rejoindre notre réseau ?',
+        'partner_b1_title' => 'Missions Régulières',
+        'partner_b1_desc' => 'Bénéficiez d\'un flux constant de clients et d\'interventions qualifiées près de chez vous.',
+        'partner_b2_title' => 'Liberté & Flexibilité',
+        'partner_b2_desc' => 'Acceptez les missions selon vos disponibilités et votre zone géographique.',
+        'partner_b3_title' => 'Rémunération Attractive',
+        'partner_b3_desc' => 'Tarifs de sous-traitance valorisants et règlements rapides.',
+        'partner_form_title' => 'Formulaire de Candidature Sous-Traitant / Indépendant',
+        'partner_form_sub' => 'Remplissez ce formulaire pour rejoindre notre réseau national d\'intervenants.',
+        'label_company' => 'Société / Nom complet *',
+        'label_region' => 'Département / Région d\'intervention *',
+        'label_certibiocide' => 'Certificat Certibiocide *',
+        'label_experience' => 'Années d\'expérience en 3D (Dératisation...)',
+        'cert_yes' => 'Oui - Certificat valide',
+        'cert_no' => 'En cours / Autre',
+        'partner_submit_btn' => 'Soumettre Ma Candidature Partenaire',
+
         // Footer
         'footer_desc' => 'Entreprise spécialisée en dératisation, désinsectisation et désinfection d\'urgence pour particuliers et professionnels. Interventions 7j/7 et 24h/24 dans toute l\'Île-de-France, Marseille et Lyon.',
         'footer_pests' => 'Nuisibles Traités',
@@ -114,6 +135,7 @@ $translations = [
         'nav_zones' => 'Coverage Areas',
         'nav_process' => 'Our Method',
         'nav_contact' => 'Contact & Quote',
+        'nav_partners' => 'Partners / Subcontractors',
         'free_call' => 'Free Call 24/7',
 
         // Hero
@@ -178,6 +200,26 @@ $translations = [
         'label_surface' => 'Area (sqm)',
         'label_details' => 'Details',
         'submit_btn' => 'Send Intervention Request',
+
+        // Partners Page
+        'partner_hero_title' => 'Become a Partner or Subcontractor Technician',
+        'partner_hero_desc' => 'Receive qualified pest control missions across all of France. Grow your business with SOS PARASITES.',
+        'partner_benefits_title' => 'Why join our network?',
+        'partner_b1_title' => 'Regular Missions',
+        'partner_b1_desc' => 'Benefit from a steady flow of clients and qualified interventions near you.',
+        'partner_b2_title' => 'Freedom & Flexibility',
+        'partner_b2_desc' => 'Accept missions based on your availability and geographical area.',
+        'partner_b3_title' => 'Attractive Pay',
+        'partner_b3_desc' => 'Valuing subcontractor rates and prompt settlements.',
+        'partner_form_title' => 'Subcontractor / Independent Application Form',
+        'partner_form_sub' => 'Fill out this form to join our national network of technicians.',
+        'label_company' => 'Company / Full Name *',
+        'label_region' => 'Department / Region of intervention *',
+        'label_certibiocide' => 'Certibiocide Certificate *',
+        'label_experience' => 'Years of experience in pest control',
+        'cert_yes' => 'Yes - Valid certificate',
+        'cert_no' => 'In progress / Other',
+        'partner_submit_btn' => 'Submit Partner Application',
 
         // Footer
         'footer_desc' => 'Company specialized in emergency pest control, disinfection, and extermination for residential and commercial clients. 7/7 & 24/24 service across Île-de-France, Marseille, and Lyon.',

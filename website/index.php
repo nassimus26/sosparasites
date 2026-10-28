@@ -280,7 +280,7 @@ require_once __DIR__ . '/includes/header.php';
             </div>
 
             <div class="lg:col-span-7">
-                <div class="bg-white text-gray-900 rounded-3xl p-6 sm:p-10 shadow-2xl">
+                <div class="bg-white text-gray-900 rounded-3xl p-5 sm:p-9 shadow-2xl transform scale-[0.95] origin-top">
                     <h3 class="text-2xl font-bold text-gray-900 mb-2"><?= __('form_title') ?></h3>
                     <p class="text-xs text-gray-500 mb-6"><?= __('form_sub') ?></p>
 
