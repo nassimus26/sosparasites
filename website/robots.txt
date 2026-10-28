@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /protected/
+
+Sitemap: https://sosparasites.fr/sitemap.xml

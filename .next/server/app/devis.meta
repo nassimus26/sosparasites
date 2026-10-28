@@ -1,0 +1,34 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/devis/layout,_N_T_/devis/page,_N_T_/devis"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/devis/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 160,
+            "slots": null
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/4f56041fd9a5682716b90f59a6eaea928bbf8daa01a3635e7c67796097df475d/$/devis",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/devis/page"
+    },
+    "isFallback": false
+  }
+}

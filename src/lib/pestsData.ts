@@ -1,0 +1,316 @@
+export interface PestInfo {
+  id: string;
+  slug: string;
+  name: string;
+  subtitle: string;
+  category: 'Insects' | 'Rodents' | 'Flying' | 'Parasites';
+  dangerLevel: 'Moyen' | 'Élevé' | 'Critique';
+  description: string;
+  symptoms: string[];
+  risks: string[];
+  treatmentMethod: string;
+  preventionTips: string[];
+  icon: string;
+  bgGradient: string;
+}
+
+export const PESTS_DATA: PestInfo[] = [
+  {
+    id: 'punaises-de-lit',
+    slug: 'punaises-de-lit',
+    name: 'Punaises de lit',
+    subtitle: 'Éradication totale de la punaise de lit dans les chambres et logements',
+    category: 'Parasites',
+    dangerLevel: 'Critique',
+    description: 'Les punaises de lit se multiplient très rapidement et résistent aux insecticides classiques du commerce. Leurs piqûres répétées provoquent démangeaisons vives, insomnies et réactions allergiques.',
+    symptoms: [
+      'Plaques de piqûres alignées sur la peau au réveil',
+      'Petites taches noires ou de sang sur les draps et matelas',
+      'Présence de petites peaux de mue près de la tête de lit',
+      'Odeur douçâtre désagréable en cas de forte infestation'
+    ],
+    risks: [
+      'Troubles sévères du sommeil et anxiété',
+      'Infections cutanées dues aux grattages répétés',
+      'Propagation rapide à toutes les pièces et appartements voisins'
+    ],
+    treatmentMethod: 'Traitement combiné chimique homologué Certibiocide et/ou traitement thermique de choc. Pulvérisation ciblée des zones de refuge et traitement des fissures.',
+    preventionTips: [
+      'Lavez le linge de lit et vêtements contaminés à 60°C minimum ou passez au sèche-linge 30 min',
+      'Passez l’aspirateur méticuleusement dans les coutures du matelas et sous le lit',
+      'Évitez de ramasser des meubles en tissu dans la rue'
+    ],
+    icon: 'Bug',
+    bgGradient: 'from-red-500/10 to-orange-500/10'
+  },
+  {
+    id: 'cafards-blattes',
+    slug: 'cafards-et-blattes',
+    name: 'Cafards et blattes',
+    subtitle: 'Destruction des colonies de cafards en cuisine et locaux professionnels',
+    category: 'Insects',
+    dangerLevel: 'Critique',
+    description: 'Les blattes de cuisine (germaniques, orientales ou américaines) prolifèrent dans les endroits chauds et humides (cuisines, arrière-électroménager, canalisations). Elles souillent les aliments et transmettent de graves bactéries.',
+    symptoms: [
+      'Vue de cafards en journée (signe de forte infestation)',
+      'Présence d’excréments noirs sous forme de petites crottes (semblables à du poivre)',
+      'Odeur rance forte caractéristiques dans les placards',
+      'Présence de poches d’œufs (oothèques)'
+    ],
+    risks: [
+      'Contamination bactérienne des surfaces alimentaires (Salmonelle, E. coli)',
+      'Déclenchement d’asthme et allergies chez les enfants',
+      'Fermeture administrative pour les professionnels de la restauration'
+    ],
+    treatmentMethod: 'Application de gel professionnel appât haute appétence sans odeur ni évacuation nécessaire, combinée si besoin avec une nébulisation spécifique.',
+    preventionTips: [
+      'Ne laissez aucune miette ni vaisselle sale la nuit',
+      'Réparez rapidement les fuites d’eau sous les éviers',
+      'Stockez les aliments dans des boîtes hermétiques'
+    ],
+    icon: 'Sparkles',
+    bgGradient: 'from-amber-500/10 to-yellow-500/10'
+  },
+  {
+    id: 'souris-rats',
+    slug: 'souris-et-rats',
+    name: 'Souris et rats',
+    subtitle: 'Dératisation complète, pose d’appâts sécurisés et rebouchage des accès',
+    category: 'Rodents',
+    dangerLevel: 'Critique',
+    description: 'Rats d’égout, rats noirs et souris domestiques occasionnent d’importants dégâts matériels en rongeant câbles électriques, tuyaux et isolants, tout en présentant un risque sanitaire majeur.',
+    symptoms: [
+      'Bruits de grattage dans les cloisons ou faux plafonds la nuit',
+      'Traces de crottes allongées près des zones de stockage',
+      'Câbles, emballages ou plinthes raccordés ou rongeurs aperçus',
+      'Traces de gras le long des plinthes et murs'
+    ],
+    risks: [
+      'Transmission de la leptospirose, salmonellose et puces',
+      'Risque d’incendie par court-circuit (câbles rongés)',
+      'Degradation structurelle des isolants et cloisons'
+    ],
+    treatmentMethod: 'Mise en place de postes d’appâtage sécurisés sous clé, pose de pièges mécaniques pros, et colmatage hermétique des voies de passage (obturation inox/grillage).',
+    preventionTips: [
+      'Fermez les poubelles avec un couvercle hermétique',
+      'Bouchez le bas des portes et les trous de tuyauteries',
+      'Nettoyez immédiatement les zones de stockage de denrées'
+    ],
+    icon: 'ShieldAlert',
+    bgGradient: 'from-zinc-500/10 to-stone-500/10'
+  },
+  {
+    id: 'fourmis',
+    slug: 'fourmis',
+    name: 'Fourmis',
+    subtitle: 'Éradication des fourmilières et colonies dans les habitations et jardins',
+    category: 'Insects',
+    dangerLevel: 'Moyen',
+    description: 'Les fourmis (noires, charpentières ou d’Argentine) s’infiltrent à la recherche de sucre et de nourriture, formant des colonnes ininterrompues qui envahissent cuisines et terrasses.',
+    symptoms: [
+      'Lignes ininterrompues de fourmis vers les sources de nourriture',
+      'Petits tas de sciure sous les plinthes (fourmis charpentières)',
+      'Présence de fourmis ailées lors des essaimages au printemps'
+    ],
+    risks: [
+      'Contamination des denrées sucrées et aliments',
+      'Dégâts dans les structures en bois (fourmis charpentières)',
+      'Mécontentement des clients en établissement recevant du public'
+    ],
+    treatmentMethod: 'Traitement par gel micro-gouttes agissant par effet retard pour empoisonner la reine et détruire la fourmilière à la racine.',
+    preventionTips: [
+      'Nettoyez immédiatement les liquides sucrés renversés',
+      'Mettez le sucre et la nourriture en bocaux en verre',
+      'Montez la garde sur les joints de portes et fenêtres'
+    ],
+    icon: 'Flame',
+    bgGradient: 'from-orange-500/10 to-amber-500/10'
+  },
+  {
+    id: 'guepes-frelons',
+    slug: 'guepes-et-frelons',
+    name: 'Guêpes et frelons',
+    subtitle: 'Destruction de nids de guêpes, frelons européens et frelons asiatiques',
+    category: 'Flying',
+    dangerLevel: 'Critique',
+    description: 'Les nids de guêpes et de frelons (particulièrement le frelon asiatique) représentent un danger mortel en cas de piqûres multiples ou de choc anaphylactique.',
+    symptoms: [
+      'Allées et venues incessantes d’insectes vers un même point',
+      'Présence visuelle d’un nid sous toiture, arbre, volet roulant ou haie',
+      'Bruit de bourdonnement important dans les combles'
+    ],
+    risks: [
+      'Choc anaphylactique potentiellement mortel chez les personnes allergiques',
+      'Agressivité forte à proximité du nid',
+      'Incapacité d’utiliser votre jardin ou balcon'
+    ],
+    treatmentMethod: 'Poudrage ou injection de produit foudroyant directement au cœur du nid grâce à une perche télescopique haute hauteur, puis retrait sécurisé du nid.',
+    preventionTips: [
+      'Ne tentez jamais de détruire un nid vous-même sans équipement',
+      'Vérifiez vos volets roulants et sous-pentes au début du printemps',
+      'Protégez les boissons et aliments sucrés en extérieur'
+    ],
+    icon: 'Zap',
+    bgGradient: 'from-yellow-500/10 to-orange-500/10'
+  },
+  {
+    id: 'puces',
+    slug: 'puces',
+    name: 'Puces',
+    subtitle: 'Traitement anti-puces pour parquets, moquettes et coussins d’animaux',
+    category: 'Parasites',
+    dangerLevel: 'Élevé',
+    description: 'Apportées généralement par les animaux domestiques, les puces piquent l’homme aux chevilles et mollets et s’installent durablement dans les lames de parquet et moquettes.',
+    symptoms: [
+      'Démangeaisons intenses et petites piqûres rouges aux chevilles et bas des jambes',
+      'Vue de petits insectes sautant sur le carrelage ou les draps',
+      'Présence de petites crottes de puces (points noirs) dans le pelage des animaux'
+    ],
+    risks: [
+      'Allergies cutanées et surinfections',
+      'Anémie chez les animaux jeunes ou affaiblis',
+      'Prolifération très rapide des larves dans les fentes du sol'
+    ],
+    treatmentMethod: 'Pulvérisation d’un régulateur de croissance (IGR) et insecticide choc couvrant l’ensemble des surfaces au sol.',
+    preventionTips: [
+      'Traitez simultanément vos animaux avec un antiparasitaire vétérinaire',
+      'Lavez les paniers et coussins à 60°C',
+      'Passez l’aspirateur très régulièrement et jetez le sac'
+    ],
+    icon: 'Activity',
+    bgGradient: 'from-purple-500/10 to-pink-500/10'
+  },
+  {
+    id: 'mouches-moucherons',
+    slug: 'mouches-et-moucherons',
+    name: 'Mouches et moucherons',
+    subtitle: 'Contrôle des invasions de mouches et moucherons en intérieur',
+    category: 'Flying',
+    dangerLevel: 'Moyen',
+    description: 'Les mouches et moucherons prolifèrent rapidement près des poubelles, canalisations et denrées organiques en décomposition, causant une gêne visuelle et un risque d’hygiène.',
+    symptoms: [
+      'Présence constante d’insectes volants autour des éviers ou poubelles',
+      'Présence de larves (asticots) dans les bacs à déchets',
+      'Taches noires de déjections sur les vitres et luminaires'
+    ],
+    risks: [
+      'Transport de microbes de souillures vers la nourriture',
+      'Gêne importante pour les commerces de bouche et restaurants',
+      'Impression de négligence et d’insalubrité'
+    ],
+    treatmentMethod: 'Traitement des canalisations, pulvérisation de rémanent sur les zones de repos, et conseils en gestion des déchets.',
+    preventionTips: [
+      'Videz et désinfectez régulièrement les poubelles',
+      'Nettoyez les canalisations avec du vinaigre ou nettoyant bio',
+      'Ne laissez pas mûrir les fruits à l’air libre'
+    ],
+    icon: 'Wind',
+    bgGradient: 'from-teal-500/10 to-cyan-500/10'
+  },
+  {
+    id: 'mites',
+    slug: 'mites',
+    name: 'Mites',
+    subtitle: 'Éradication des mites vestimentaires et mites alimentaires',
+    category: 'Insects',
+    dangerLevel: 'Moyen',
+    description: 'Qu’il s’agisse de mites de vêtements (qui dévorent la laine et les textiles) ou de mites alimentaires (qui contaminent farine, riz et céréales), l’infestation nécessite un traitement complet.',
+    symptoms: [
+      'Petits trous dans les vêtements en laine, cachemire ou coton',
+      'Présence de petits papillons volants gris/bruns le soir',
+      'Sorte de fils de soie ou cocon dans les paquets de céréales et farine'
+    ],
+    risks: [
+      'Destruction de garde-robes et textiles coûteux',
+      'Contamination et perte de stocks alimentaires',
+      'Prolifération cachée dans les placards de cuisine'
+    ],
+    treatmentMethod: 'Traitement insecticide par micro-nebulisation des placards, installation de pièges à phéromones professionnels, et nettoyage guidé.',
+    preventionTips: [
+      'Stockez vos aliments dans des bocaux hermétiques en verre',
+      'Rangez les vêtements propres dans des housses sous vide',
+      'Aérez et aspirez les fonds de penderies'
+    ],
+    icon: 'Feather',
+    bgGradient: 'from-indigo-500/10 to-blue-500/10'
+  },
+  {
+    id: 'araignees',
+    slug: 'araignees',
+    name: 'Araignées',
+    subtitle: 'Traitement préventif et curatif contre les invasions d’araignées',
+    category: 'Insects',
+    dangerLevel: 'Moyen',
+    description: 'Bien que souvent utiles dans la nature, une invasion massive d’araignées dans les caves, garages, sous-sols ou pièces à vivre génère phobie et toiles incessantes.',
+    symptoms: [
+      'Accumulation importante de toiles d’araignées aux angles des plafonds',
+      'Présence récurrente de grosses araignées dans les pièces d’eau',
+      'Nids de bébés araignées apparaissant rapidement'
+    ],
+    risks: [
+      'Anxiété forte pour les personnes arachnophobes',
+      'Impression d’abandon des locaux ou caves',
+      'Piqûres occasionnelles rouges et douloureuses'
+    ],
+    treatmentMethod: 'Pulvérisation périphérique d’un produit répulsif et biocide rémanent longue durée sur les contours d’ouvertures, caves et combles.',
+    preventionTips: [
+      'Aspirez régulièrement sous les meubles et derrière les radiateurs',
+      'Installez des moustiquaires aux fenêtres de cave',
+      'Réduisez les sources de lumière extérieure la nuit qui attirent leurs proies'
+    ],
+    icon: 'Compass',
+    bgGradient: 'from-slate-500/10 to-gray-500/10'
+  },
+  {
+    id: 'moustiques',
+    slug: 'moustiques',
+    name: 'Moustiques',
+    subtitle: 'Traitement anti-moustique tigres et moustiques communs pour jardins et intérieurs',
+    category: 'Flying',
+    dangerLevel: 'Élevé',
+    description: 'Le moustique tigre (Aedes albopictus) a envahi l’Île-de-France et la région marseillaise. Il pique le jour comme la nuit et gâche l’utilisation des terrasses et jardins.',
+    symptoms: [
+      'Bourdonnements incessants près des oreilles',
+      'Piqûres douloureuses provoquant boutons rouges et démangeaisons vives',
+      'Présence de larves nageant dans les petites eaux stagnantes'
+    ],
+    risks: [
+      'Vecteur potentiel de maladies (Dengue, Chikungunya, Zika)',
+      'Nuits agitées et dégradation de la qualité de vie en été',
+      'Impossibilité de profiter des extérieurs'
+    ],
+    treatmentMethod: 'Traitement larvicide des eaux stagnantes non éliminables + pulvérisation d’un biocide barrière sur les haies, terrasses et végétations de repos.',
+    preventionTips: [
+      'Videz les soucoupes de pots de fleurs au moins une fois par semaine',
+      'Couvrez les récupérateurs d’eau de pluie avec un voile moustiquaire',
+      'Remplacez l’eau des vases fréquemment'
+    ],
+    icon: 'Crosshair',
+    bgGradient: 'from-emerald-500/10 to-teal-500/10'
+  }
+];
+
+export const DEPARTMENTS_IDF = [
+  { code: '75', name: 'Paris', mainCities: ['Paris 1er à 20e'] },
+  { code: '77', name: 'Seine-et-Marne', mainCities: ['Meaux', 'Chelles', 'Melun', 'Pontault-Combault', 'Savigny-le-Temple'] },
+  { code: '78', name: 'Yvelines', mainCities: ['Versailles', 'Sartrouville', 'Mantes-la-Jolie', 'Saint-Germain-en-Laye', 'Poissy'] },
+  { code: '91', name: 'Essonne', mainCities: ['Évry-Courcouronnes', 'Corbeil-Essonnes', 'Massy', 'Savigny-sur-Orge', 'Sainte-Geneviève-des-Bois'] },
+  { code: '92', name: 'Hauts-de-Seine', mainCities: ['Boulogne-Billancourt', 'Nanterre', 'Courbevoie', 'Colombes', 'Asnières-sur-Seine', 'Neuilly-sur-Seine'] },
+  { code: '93', name: 'Seine-Saint-Denis', mainCities: ['Saint-Denis', 'Montreuil', 'Aulnay-sous-Bois', 'Aubervilliers', 'Drancy', 'Noisy-le-Grand'] },
+  { code: '94', name: 'Val-de-Marne', mainCities: ['Créteil', 'Vitry-sur-Seine', 'Champigny-sur-Marne', 'Saint-Maur-des-Fossés', 'Ivry-sur-Seine'] },
+  { code: '95', name: 'Val-d\'Oise', mainCities: ['Argenteuil', 'Sarcelles', 'Cergy', 'Garges-lès-Gonesse', 'Franconville'] },
+];
+
+export const MARSEILLE_REGION = {
+  code: '13',
+  name: 'Bouches-du-Rhône & Marseille',
+  mainCities: [
+    'Marseille 1er au 16e arrondissement',
+    'Aix-en-Provence',
+    'Aubagne',
+    'Martigues',
+    'Salon-de-Provence',
+    'Vitrolles',
+    'Marignane'
+  ]
+};

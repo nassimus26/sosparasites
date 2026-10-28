@@ -1,0 +1,34 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/tarifs/layout,_N_T_/tarifs/page,_N_T_/tarifs"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/tarifs/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 160,
+            "slots": null
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/11ab4184718f209a3ba59d7af7d7d83893d285b455292cbf3219d77c2d00cf2e/$/tarifs",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/tarifs/page"
+    },
+    "isFallback": false
+  }
+}

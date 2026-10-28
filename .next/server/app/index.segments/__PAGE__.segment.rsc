@@ -1,0 +1,36 @@
+1:"$Sreact.fragment"
+2:"/_next/static/chunks/0umf92h1sb77c.js"
+3:"/_next/static/chunks/05t2l4lql08wb.js"
+4:I[45678,["$2","$3"],"default"]
+5:I[39756,["$2","$3"],"default"]
+6:I[37457,["$2","$3"],"default"]
+7:I[13642,["$2","$3"],"default"]
+8:I[98067,["$2","$3"],"default"]
+c:"/_next/static/chunks/40iq5id4biu9x.js"
+d:I[32177,["$2","$3","$c"],"default"]
+e:I[39029,["$2","$3","$c"],"default"]
+f:I[60421,["$2","$3","$c"],"default"]
+10:I[260,["$2","$3","$c"],"default"]
+11:I[48537,["$2","$3","$c"],"default"]
+12:I[15643,["$2","$3","$c"],"default"]
+13:I[26675,["$2","$3","$c"],"default"]
+14:I[43944,["$2","$3","$c"],"default"]
+15:I[97367,["$2","$3"],"OutletBoundary"]
+16:"$Sreact.suspense"
+19:"ViewportBoundary"
+1a:I[97367,["$2","$3"],"$19"]
+1b:"MetadataBoundary"
+1c:I[97367,["$2","$3"],"$1b"]
+:HL["/_next/static/chunks/2xhn8suf7c61i.css","style"]
+a:X
+b:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[[["$","$Ld",null,{}],["$","$Le",null,{}],["$","$Lf",null,{}],["$","$L10",null,{}],["$","$L11",null,{}],["$","$L12",null,{}],["$","$L13",null,{}],["$","$L14",null,{}]],[["$","script","script-0",{"src":"/_next/static/chunks/40iq5id4biu9x.js","async":true}]],["$","$L15",null,{"children":["$","$16",null,{"name":"Next.MetadataOutlet","children":"$@17"}]}]]}],"p":"$@18","v":null,"s":"$a"}}]]
+0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2xhn8suf7c61i.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/0umf92h1sb77c.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/05t2l4lql08wb.js","async":true}]],["$","html",null,{"lang":"fr","className":"scroll-smooth","children":[["$","head",null,{"children":["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"LocalBusiness\",\"name\":\"SOS PARASITES\",\"description\":\"Service d'extermination et de traitement anti-nuisibles en Île-de-France et Marseille.\",\"telephone\":\"+33771502678\",\"email\":\"contact@sosparasites.fr\",\"url\":\"https://sosparasites.fr\",\"areaServed\":[\"Paris\",\"Île-de-France\",\"Marseille\",\"Bouches-du-Rhône\"],\"priceRange\":\"Sur Devis / Évaluation Personnalisée\",\"openingHours\":\"Mo-Su 00:00-24:00\",\"address\":{\"@type\":\"PostalAddress\",\"addressRegion\":\"Île-de-France & Bouches-du-Rhône\",\"addressCountry\":\"FR\"}}"}}]}],["$","body",null,{"className":"min-h-screen flex flex-col bg-slate-50 text-slate-900 antialiased selection:bg-red-600 selection:text-white","children":[["$","$L4",null,{}],["$","main",null,{"className":"flex-grow","children":["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}]}],["$","$L7",null,{}],["$","$L8",null,{}]]}]]}]]}],"p":"$@9","v":null,"s":"$a"},"c":"$Qb"},"h":{"r":["$","$1","h",{"children":[null,["$","$L1a",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L1c",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$16",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"SOS PARASITES - Anti-Nuisibles 24/7 Île-de-France & Marseille | Tel: 07 71 50 26 78"}],["$","meta","1",{"name":"description","content":"Dératisation, désinsectisation et extermination urgente de nuisibles (punaises de lit, cafards, rats, guêpes, puces, moustiques...) à Paris, Île-de-France et Marseille. Intervention en 1h."}],["$","meta","2",{"name":"author","content":"SOS PARASITES"}],["$","meta","3",{"name":"keywords","content":"SOS Parasites,dératisation Paris,punaises de lit Île-de-France,désinsectisation Marseille,exterminateur cafards,traitement rats souris,destruction nid de guepes,anti moustique tigre,societe anti nuisible"}],["$","meta","4",{"property":"og:title","content":"SOS PARASITES - Intervention Anti-Nuisibles 24/7 en 1h"}],["$","meta","5",{"property":"og:description","content":"Punaises de lit, cafards, rats, souris, guêpes, puces. Intervention rapide Île-de-France & Marseille. Devis gratuit et personnalisé."}],["$","meta","6",{"property":"og:url","content":"https://sosparasites.fr"}],["$","meta","7",{"property":"og:site_name","content":"SOS PARASITES"}],["$","meta","8",{"property":"og:locale","content":"fr_FR"}],["$","meta","9",{"property":"og:type","content":"website"}],["$","meta","10",{"name":"twitter:card","content":"summary"}],["$","meta","11",{"name":"twitter:title","content":"SOS PARASITES - Intervention Anti-Nuisibles 24/7 en 1h"}],"$L1d"]}]}],null]}],null]}],"p":"$@1e","v":null,"s":"$a"}},"a":"$@1f","u":"$@20","b":"BTGdz9L1B5LOR2PM5bp63"}
+17:null
+1d:["$","meta","12",{"name":"twitter:description","content":"Punaises de lit, cafards, rats, souris, guêpes, puces. Intervention rapide Île-de-France & Marseille. Devis gratuit et personnalisé."}]
+a:300
+20:true
+a:C
+1f:0
+9:"$undefined"
+1e:"$undefined"
+18:"$undefined"
