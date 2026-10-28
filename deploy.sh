@@ -3,20 +3,35 @@ set -e
 
 # ==============================================================================
 # SOS PARASITES - Automated Deployment Script from website/ to OVH Hosting
+# Supports .fr (user: sospark) and .com (argument: com / user: sosparc)
 # ==============================================================================
 
 FTP_HOST="ftp.cluster129.hosting.ovh.net"
 FTP_PORT="22"
-FTP_USER="sospark"
-FTP_PASS="MkNassimWin64"
 LOCAL_DIR="website"
 
+# Default to .fr
+TARGET_DOMAIN="sosparasites.fr"
+FTP_USER="sospark"
+
+# Check arguments
+for arg in "$@"; do
+  case $arg in
+    com|--com)
+      TARGET_DOMAIN="sosparasites.com"
+      FTP_USER="sosparc"
+      ;;
+  esac
+done
+
+FTP_PASS="MkNassimWin64"
+
 echo "=================================================="
-echo "🚀 SOS PARASITES - OVH Website Deployment"
+echo "🚀 SOS PARASITES - OVH Website Deployment ($TARGET_DOMAIN)"
 echo "=================================================="
 echo "Host: $FTP_HOST:$FTP_PORT"
 echo "User: $FTP_USER"
-echo "Local Directory: $LOCAL_DIR"
+echo "Domain: https://$TARGET_DOMAIN"
 echo "--------------------------------------------------"
 
 if [ ! -d "$LOCAL_DIR" ]; then
@@ -59,6 +74,6 @@ lftp -e "
 "
 
 echo "--------------------------------------------------"
-echo "✅ Déploiement terminé avec succès !"
-echo "🌐 Website Live URL: https://sosparasites.fr"
+echo "✅ Déploiement vers $TARGET_DOMAIN terminé avec succès !"
+echo "🌐 Website Live URL: https://$TARGET_DOMAIN"
 echo "=================================================="

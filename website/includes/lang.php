@@ -1,7 +1,8 @@
 <?php
 /**
- * Bilingual Support (French & English) for SOS PARASITES
- * Default language: French (fr)
+ * Bilingual Support (French & English) with Smart DNS & Accept-Language Detection
+ * - .com domain defaults to English (unless browser prefers French)
+ * - .fr domain defaults to French (unless browser prefers English)
  */
 
 declare(strict_types=1);
@@ -10,15 +11,37 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-// Handle language selection via GET (?lang=fr or ?lang=en) or cookie
+// 1. Handle explicit language selection via GET (?lang=fr or ?lang=en) or cookie
 if (isset($_GET['lang']) && in_array($_GET['lang'], ['fr', 'en'], true)) {
     $_SESSION['lang'] = $_GET['lang'];
     setcookie('sos_lang', $_GET['lang'], time() + (86400 * 30), '/');
 } elseif (isset($_COOKIE['sos_lang']) && in_array($_COOKIE['sos_lang'], ['fr', 'en'], true)) {
     $_SESSION['lang'] = $_COOKIE['sos_lang'];
+} else {
+    // 2. Smart Detection based on DNS (.com vs others) and Accept-Language header
+    $host = $_SERVER['HTTP_HOST'] ?? 'sosparasites.fr';
+    $isComDomain = (str_ends_with(strtolower($host), '.com') || str_contains(strtolower($host), '.com'));
+
+    $acceptLang = $_SERVER['HTTP_ACCEPT_LANGUAGE'] ?? '';
+    $firstLang = strtolower(substr($acceptLang, 0, 2));
+
+    if ($isComDomain) {
+        // .com default is English, except if browser's first language is French
+        if ($firstLang === 'fr') {
+            $_SESSION['lang'] = 'fr';
+        } else {
+            $_SESSION['lang'] = 'en';
+        }
+    } else {
+        // .fr / default is French, except if browser's first language is English
+        if ($firstLang === 'en') {
+            $_SESSION['lang'] = 'en';
+        } else {
+            $_SESSION['lang'] = 'fr';
+        }
+    }
 }
 
-// Default to French
 $currentLang = $_SESSION['lang'] ?? 'fr';
 
 $translations = [
@@ -31,7 +54,7 @@ $translations = [
         'nav_zones' => 'Zones d\'Intervention',
         'nav_process' => 'Notre Méthode',
         'nav_contact' => 'Contact & Devis',
-        'nav_partners' => 'Partenaires',
+        'nav_partners' => 'Devenez Partenaires',
         'free_call' => 'Appel Gratuit 24/7',
 
         // Hero
@@ -98,7 +121,7 @@ $translations = [
         'submit_btn' => 'Envoyer Ma Demande D\'Intervention',
 
         // Partners Page
-        'partner_hero_title' => 'Devenez Technicien Partenaire ou Sous-Traitant',
+        'partner_hero_title' => 'Rejoignez nos équipes d\'interventions à travers toute la France',
         'partner_hero_desc' => 'Recevez des missions d\'intervention anti-nuisibles qualifiées dans toute la France. Développez votre activité avec SOS PARASITES.',
         'partner_benefits_title' => 'Pourquoi rejoindre notre réseau ?',
         'partner_b1_title' => 'Missions Régulières',
