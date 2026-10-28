@@ -124,12 +124,7 @@ require_once __DIR__ . '/lang.php';
                     <a href="/#contact" class="hover:text-red-600 transition"><?= __('nav_contact') ?></a>
                 </nav>
 
-                <div class="hidden sm:flex items-center gap-3">
-                    <a href="<?= PHONE_TEL ?>" class="bg-red-600 hover:bg-red-700 text-white px-5 py-3 rounded-xl font-bold text-sm shadow-md transition flex items-center gap-2.5 animate-pulse-call">
-                        <i data-lucide="phone" class="w-4 h-4"></i>
-                        <span class="text-lg font-black tracking-wide"><?= PHONE_DISPLAY ?></span>
-                    </a>
-                </div>
+
 
                 <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="xl:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 focus:outline-none">
                     <i data-lucide="menu" class="w-6 h-6"></i>
