@@ -13,8 +13,8 @@ require_once __DIR__ . '/../protected/config.php';
                         <div class="bg-red-600 text-white p-2 rounded-xl">
                             <i data-lucide="shield" class="w-6 h-6"></i>
                         </div>
-                        <span class="text-2xl font-black text-white tracking-tight">
-                            SOS<span class="text-red-600">PARASITES</span>.fr
+                        <span class="text-2xl font-black text-white tracking-tight flex items-baseline">
+                            SOS<span class="text-red-600">PARASITES</span><span class="text-base font-extrabold text-red-500 ml-1">.fr</span>
                         </span>
                     </a>
                     <p class="text-xs text-slate-400 leading-relaxed max-w-sm">

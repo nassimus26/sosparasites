@@ -13,7 +13,7 @@ require_once __DIR__ . '/lang.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $pageTitle ?? 'SOS PARASITES - Anti-Nuisibles 24/7 Île-de-France, Marseille & Lyon' ?></title>
     <meta name="description" content="<?= $pageDesc ?? __('hero_desc') ?>">
-    <meta name="keywords" content="sos parasites, dératisation Paris, désinsectisation Île-de-France, punaises de lit Marseille, exterminateur cafards Lyon, traitement rats souris, destruction nid de guêpes, puces, moustiques tigres, société anti nuisible, devis gratuit, intervention urgente 24/7">
+    <meta name="keywords" content="sos parasites, punaises de lit spécialiste, traitement cafards, extermination rats souris, destruction nids de guêpes, puces, moustiques, entreprise anti nuisible, société désinsectisation, dératisation, désinfection, devis gratuit, intervention urgente 24/7, solution anti nuisible">
     <meta name="author" content="SOS PARASITES">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <link rel="canonical" href="https://sosparasites.fr<?= $_SERVER['REQUEST_URI'] ?? '/' ?>">
@@ -79,12 +79,8 @@ require_once __DIR__ . '/lang.php';
                         <i data-lucide="shield" class="w-7 h-7"></i>
                     </div>
                     <div class="flex flex-col">
-                        <?php
-                        $host = $_SERVER['HTTP_HOST'] ?? 'sosparasites.fr';
-                        $tld = str_contains(strtolower($host), '.com') ? '.com' : '.fr';
-                        ?>
                         <span class="text-xl sm:text-2xl font-black tracking-tight text-gray-900 leading-none flex items-baseline">
-                            SOS<span class="text-red-600">PARASITES</span><span class="text-sm sm:text-base font-extrabold text-red-600 ml-1"><?= $tld ?></span>
+                            SOS<span class="text-red-600">PARASITES</span><span class="text-sm sm:text-base font-extrabold text-red-600 ml-1">.com</span>
                         </span>
                         <span class="text-[10px] font-medium text-gray-500 uppercase tracking-wider mt-0.5">
                             Anti-Nuisibles IDF, Marseille & Lyon
