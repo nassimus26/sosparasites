@@ -70,32 +70,6 @@ require_once __DIR__ . '/lang.php';
 </head>
 <body class="min-h-screen flex flex-col bg-slate-50 text-slate-900 antialiased">
 
-    <!-- Top Emergency Bar -->
-    <div style="background-color: #b91c1c;" class="text-white text-xs md:text-sm py-1.5 px-4">
-        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-1 text-white">
-            <div class="flex items-center gap-2">
-                <span class="relative flex h-2.5 w-2.5">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-400"></span>
-                </span>
-                <span class="font-semibold"><?= __('emergency_bar') ?></span>
-            </div>
-            <div class="flex items-center gap-4 font-medium">
-                <!-- Language Switcher -->
-                <div class="flex items-center gap-1.5 bg-red-900/80 px-2 py-0.5 rounded text-xs font-bold">
-                    <a href="?lang=fr" class="<?= $currentLang === 'fr' ? 'text-white underline' : 'text-red-200 hover:text-white' ?>">FR</a>
-                    <span>|</span>
-                    <a href="?lang=en" class="<?= $currentLang === 'en' ? 'text-white underline' : 'text-red-200 hover:text-white' ?>">EN</a>
-                </div>
-
-                <a href="<?= PHONE_TEL ?>" class="bg-white text-red-700 hover:bg-gray-100 font-bold px-3 py-0.5 rounded transition flex items-center gap-1 text-xs">
-                    <i data-lucide="phone" class="w-3 h-3"></i>
-                    <?= __('emergency_call') ?> : <?= PHONE_DISPLAY ?>
-                </a>
-            </div>
-        </div>
-    </div>
-
     <!-- Main Navigation Header -->
     <header class="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -105,10 +79,14 @@ require_once __DIR__ . '/lang.php';
                         <i data-lucide="shield" class="w-7 h-7"></i>
                     </div>
                     <div class="flex flex-col">
-                        <span class="text-xl sm:text-2xl font-black tracking-tight text-gray-900 leading-none">
-                            SOS<span class="text-red-600">PARASITES</span><span class="text-xs font-normal text-gray-500 block">.fr</span>
+                        <?php
+                        $host = $_SERVER['HTTP_HOST'] ?? 'sosparasites.fr';
+                        $tld = str_contains(strtolower($host), '.com') ? '.com' : '.fr';
+                        ?>
+                        <span class="text-xl sm:text-2xl font-black tracking-tight text-gray-900 leading-none flex items-baseline">
+                            SOS<span class="text-red-600">PARASITES</span><span class="text-sm sm:text-base font-extrabold text-red-600 ml-1"><?= $tld ?></span>
                         </span>
-                        <span class="text-[10px] font-medium text-gray-500 uppercase tracking-wider">
+                        <span class="text-[10px] font-medium text-gray-500 uppercase tracking-wider mt-0.5">
                             Anti-Nuisibles IDF, Marseille & Lyon
                         </span>
                     </div>
@@ -124,7 +102,14 @@ require_once __DIR__ . '/lang.php';
                     <a href="/#contact" class="hover:text-red-600 transition"><?= __('nav_contact') ?></a>
                 </nav>
 
-
+                <div class="hidden sm:flex items-center gap-3">
+                    <!-- Language Switcher -->
+                    <div class="flex items-center gap-1.5 bg-gray-100 px-3 py-1.5 rounded-xl text-xs font-bold text-gray-700 border border-gray-200 shadow-sm">
+                        <a href="?lang=fr" class="<?= $currentLang === 'fr' ? 'text-red-600 underline font-black' : 'text-gray-500 hover:text-gray-900' ?>">FR</a>
+                        <span>|</span>
+                        <a href="?lang=en" class="<?= $currentLang === 'en' ? 'text-red-600 underline font-black' : 'text-gray-500 hover:text-gray-900' ?>">EN</a>
+                    </div>
+                </div>
 
                 <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="xl:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 focus:outline-none">
                     <i data-lucide="menu" class="w-6 h-6"></i>
@@ -147,11 +132,5 @@ require_once __DIR__ . '/lang.php';
             <a href="/zones.php" class="block py-2 text-base font-semibold text-gray-800 hover:text-red-600"><?= __('nav_zones') ?></a>
             <a href="/nous-rejoindre.php" class="block py-2 text-base font-semibold text-sky-700 hover:text-sky-800 font-bold"><?= __('nav_partners') ?></a>
             <a href="/#contact" class="block py-2 text-base font-semibold text-gray-800 hover:text-red-600"><?= __('nav_contact') ?></a>
-            <div class="pt-2">
-                <a href="<?= PHONE_TEL ?>" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 rounded-xl shadow text-center flex items-center justify-center gap-2">
-                    <i data-lucide="phone" class="w-5 h-5"></i>
-                    <?= __('emergency_call') ?> <?= PHONE_DISPLAY ?>
-                </a>
-            </div>
         </div>
     </header>
