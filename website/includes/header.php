@@ -13,7 +13,7 @@ require_once __DIR__ . '/lang.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $pageTitle ?? 'SOS PARASITES - Anti-Nuisibles 24/7 Île-de-France, Marseille & Lyon' ?></title>
     <meta name="description" content="<?= $pageDesc ?? __('hero_desc') ?>">
-    <meta name="keywords" content="sos parasites, punaises de lit spécialiste, traitement cafards, extermination rats souris, destruction nids de guêpes, puces, moustiques, entreprise anti nuisible, société désinsectisation, dératisation, désinfection, devis gratuit, intervention urgente 24/7, solution anti nuisible">
+    <meta name="keywords" content="punaises de lit, punese de lit, punaises de lit spécialiste, traitement punaises de lit, extermination cafards, traitement rats souris, destruction nid de guêpes, puces, moustiques, entreprise anti nuisible, société désinsectisation, dératisation, désinfection, devis gratuit, intervention urgente 24/7, sos parasites">
     <meta name="author" content="SOS PARASITES">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <link rel="canonical" href="https://sosparasites.fr<?= $_SERVER['REQUEST_URI'] ?? '/' ?>">
