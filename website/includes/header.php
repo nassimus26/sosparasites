@@ -16,11 +16,17 @@ require_once __DIR__ . '/lang.php';
     <meta name="keywords" content="punaises de lit, punese de lit, punaises de lit spécialiste, traitement punaises de lit, extermination cafards, traitement rats souris, destruction nid de guêpes, puces, moustiques, entreprise anti nuisible, société désinsectisation, dératisation, désinfection, devis gratuit, intervention urgente 24/7, sos parasites">
     <meta name="author" content="SOS PARASITES">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <link rel="canonical" href="https://sosparasites.fr<?= $_SERVER['REQUEST_URI'] ?? '/' ?>">
+    <?php
+    $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || (isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == 443)) ? "https://" : "https://";
+    $host = $_SERVER['HTTP_HOST'] ?? 'sosparasites.com';
+    $uri = strtok($_SERVER['REQUEST_URI'] ?? '/', '?');
+    $canonicalUrl = $protocol . $host . $uri;
+    ?>
+    <link rel="canonical" href="<?= $canonicalUrl ?>">
 
     <!-- Open Graph SEO -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sosparasites.fr">
+    <meta property="og:url" content="<?= $canonicalUrl ?>">
     <meta property="og:title" content="<?= $pageTitle ?? 'SOS PARASITES - Anti-Nuisibles 24/7 Île-de-France, Marseille & Lyon' ?>">
     <meta property="og:description" content="<?= $pageDesc ?? __('hero_desc') ?>">
     <meta property="og:locale" content="<?= $currentLang === 'en' ? 'en_US' : 'fr_FR' ?>">
@@ -37,6 +43,9 @@ require_once __DIR__ . '/lang.php';
 
       gtag('config', 'G-VRWHY74XPB');
     </script>
+
+    <!-- Google reCAPTCHA v2 API -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>

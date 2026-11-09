@@ -1,14 +1,38 @@
 <?php
 /**
- * PHP 8 Mail Handler for SOS PARASITES
- * Sends email to nmoualek@gmail.com via OVH SMTP (ssl0.ovh.net:465) or mail() fallback
+ * PHP 8 Mail Handler for SOS PARASITES with Native PHP CAPTCHA Verification
  */
 
 declare(strict_types=1);
 
 require_once __DIR__ . '/../protected/config.php';
 
+function verify_recaptcha(array $data): bool {
+    if (session_status() === PHP_SESSION_NONE) {
+        session_start();
+    }
+
+    $userCaptcha = trim((string)($data['captcha_code'] ?? ''));
+    $sessionCaptcha = $_SESSION['captcha'] ?? '';
+
+    // Clear session captcha to prevent replay attacks
+    unset($_SESSION['captcha']);
+
+    if (empty($userCaptcha) || empty($sessionCaptcha)) {
+        return false;
+    }
+
+    return strtoupper($userCaptcha) === strtoupper($sessionCaptcha);
+}
+
 function send_contact_email(array $data): array {
+    if (!verify_recaptcha($data)) {
+        return [
+            'success' => false,
+            'message' => 'Code de sécurité (Captcha) incorrect. Veuillez réessayer.'
+        ];
+    }
+
     $name = trim((string)($data['name'] ?? ''));
     $phone = trim((string)($data['phone'] ?? ''));
     $email = trim((string)($data['email'] ?? ''));
@@ -83,7 +107,6 @@ function send_smtp_email_native(string $to, string $subject, string $htmlBody, s
     $user = defined('SMTP_USER') ? SMTP_USER : 'contact@sosparasites.fr';
     $pass = defined('SMTP_PASS') ? SMTP_PASS : '';
 
-    // If password is not configured, fallback to standard mail()
     if (empty($pass) || $pass === 'votre_mot_de_passe_ovh_securise') {
         $headers = "MIME-Version: 1.0\r\n";
         $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
@@ -94,7 +117,6 @@ function send_smtp_email_native(string $to, string $subject, string $htmlBody, s
         return @mail($to, $subject, $htmlBody, $headers);
     }
 
-    // Connect via SSL socket to OVH SMTP
     $socket = @fsockopen("ssl://{$host}", $port, $errno, $errstr, 15);
     if (!$socket) {
         $headers = "MIME-Version: 1.0\r\n";

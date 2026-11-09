@@ -1,0 +1,17 @@
+# SOS PARASITES - Production .htaccess
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Force HTTPS
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # 301 Permanent Redirect for legacy / renamed pages (prevents 4xx errors)
+    RewriteRule ^partenaires\.php$ /nous-rejoindre.php [R=301,L]
+</IfModule>
+
+# Protect protected config directory
+<DirectoryMatch "^/.*/protected/">
+    Order deny,allow
+    Deny from all
+</DirectoryMatch>

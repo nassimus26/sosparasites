@@ -30,6 +30,12 @@ if (empty($inputData)) {
     $inputData = $_POST;
 }
 
+if (!verify_recaptcha($inputData)) {
+    http_response_code(400);
+    echo json_encode(['success' => false, 'message' => 'Veuillez valider le captcha de sécurité anti-spam.']);
+    exit;
+}
+
 $name = trim((string)($inputData['name'] ?? ''));
 $phone = trim((string)($inputData['phone'] ?? ''));
 $email = trim((string)($inputData['email'] ?? ''));

@@ -19,3 +19,7 @@ define('SMTP_USER', 'contact@sosparasites.fr');
 define('SMTP_PASS', 'votre_mot_de_passe_ovh_securise');
 
 define('PRICING_NOTICE_TEXT', "Il n’y a pas de tarif fixe, car le prix dépend du type de nuisible, du niveau d’infestation, de la superficie du logement ou du local et du traitement nécessaire. Les tarifs sont donc établis en fonction de chaque situation, après évaluation des besoins.");
+
+// Google reCAPTCHA v2 Keys
+define('RECAPTCHA_SITE_KEY', 'votre_site_key_recaptcha');
+define('RECAPTCHA_SECRET_KEY', 'votre_secret_key_recaptcha');

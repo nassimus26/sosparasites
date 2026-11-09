@@ -119,6 +119,15 @@ require_once __DIR__ . '/includes/header.php';
                     <textarea name="details" rows="4" placeholder="Présentez votre activité, vos équipements et vos zones d'intervention précises..." class="w-full bg-gray-50 border border-gray-300 rounded-xl p-3.5 text-sm focus:ring-2 focus:ring-sky-600 focus:outline-none"></textarea>
                 </div>
 
+                <div class="space-y-2">
+                    <label class="block text-xs font-bold uppercase text-gray-700">Code de sécurité *</label>
+                    <div class="flex items-center gap-3">
+                        <img src="/captcha.php" alt="CAPTCHA" id="captcha-img-partner" class="rounded-xl border border-gray-300 h-11 cursor-pointer" onclick="this.src='/captcha.php?r='+Math.random()" title="Cliquer pour rafraîchir l'image">
+                        <button type="button" onclick="document.getElementById('captcha-img-partner').src='/captcha.php?r='+Math.random()" class="text-xs text-sky-600 font-bold hover:underline">Rafraîchir</button>
+                    </div>
+                    <input type="text" name="captcha_code" required placeholder="Entrez les 5 caractères" class="w-full bg-gray-50 border border-gray-300 rounded-xl p-3.5 text-sm focus:ring-2 focus:ring-sky-600 focus:outline-none uppercase font-bold tracking-widest">
+                </div>
+
                 <button type="submit" class="w-full bg-sky-600 hover:bg-sky-700 text-white font-extrabold py-4 px-6 rounded-2xl shadow-lg transition text-base">
                     <?= __('partner_submit_btn') ?>
                 </button>
