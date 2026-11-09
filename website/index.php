@@ -382,7 +382,4 @@ document.getElementById('contact-form').addEventListener('submit', async functio
 });
 </script>
 
-</main>
-</main>
-
 <?php require_once __DIR__ . '/includes/footer.php'; ?>

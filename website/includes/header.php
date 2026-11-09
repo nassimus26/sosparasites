@@ -144,3 +144,4 @@ require_once __DIR__ . '/lang.php';
             <a href="/#contact" class="block py-2 text-base font-semibold text-gray-800 hover:text-red-600"><?= __('nav_contact') ?></a>
         </div>
     </header>
+    <main class="flex-grow">

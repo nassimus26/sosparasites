@@ -5,6 +5,7 @@
 declare(strict_types=1);
 require_once __DIR__ . '/../protected/config.php';
 ?>
+    </main>
     <footer class="bg-slate-950 text-slate-400 text-sm border-t border-slate-800 pt-12 pb-24 lg:pb-12 mt-auto">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-12 border-b border-slate-800">
