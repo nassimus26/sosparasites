@@ -10,7 +10,7 @@ $pageDesc = "Déplacement rapide en 1h dans tout Paris, l'Île-de-France, Marsei
 
 require_once __DIR__ . '/includes/header.php';
 ?>
-
+<main>
 <div class="bg-slate-900 text-white py-12 px-4 text-center">
     <div class="max-w-4xl mx-auto space-y-4">
         <span class="bg-red-600 text-white text-xs font-bold uppercase px-3 py-1 rounded-full inline-block">
@@ -68,5 +68,5 @@ require_once __DIR__ . '/includes/header.php';
 
     </div>
 </section>
-
+</main>
 <?php require_once __DIR__ . '/includes/footer.php'; ?>

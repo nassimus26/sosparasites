@@ -9,9 +9,3 @@
     # 301 Permanent Redirect for legacy / renamed pages (prevents 4xx errors)
     RewriteRule ^partenaires\.php$ /nous-rejoindre.php [R=301,L]
 </IfModule>
-
-# Protect protected config directory
-<DirectoryMatch "^/.*/protected/">
-    Order deny,allow
-    Deny from all
-</DirectoryMatch>

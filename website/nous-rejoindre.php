@@ -12,7 +12,7 @@ $pageDesc = "Rejoignez notre réseau national de techniciens indépendants et so
 
 require_once __DIR__ . '/includes/header.php';
 ?>
-
+<main>
 <!-- Partner Hero -->
 <section class="bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white py-16 lg:py-24 relative overflow-hidden">
     <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#0284c7_1px,transparent_1px)] [background-size:16px_16px]"></div>
@@ -120,12 +120,12 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
 
                 <div class="space-y-2">
-                    <label class="block text-xs font-bold uppercase text-gray-700">Code de sécurité *</label>
+                    <label for="captcha_code_partner" class="block text-xs font-bold uppercase text-gray-700">Code de sécurité *</label>
                     <div class="flex items-center gap-3">
-                        <img src="/captcha.php" alt="CAPTCHA" id="captcha-img-partner" class="rounded-xl border border-gray-300 h-11 cursor-pointer" onclick="this.src='/captcha.php?r='+Math.random()" title="Cliquer pour rafraîchir l'image">
-                        <button type="button" onclick="document.getElementById('captcha-img-partner').src='/captcha.php?r='+Math.random()" class="text-xs text-sky-600 font-bold hover:underline">Rafraîchir</button>
+                        <img src="/captcha.php" width="140" height="45" alt="Code de sécurité CAPTCHA" id="captcha-img-partner" class="rounded-xl border border-gray-300 h-11 cursor-pointer" onclick="this.src='/captcha.php?r='+Math.random()" title="Cliquer pour rafraîchir l'image">
+                        <button type="button" aria-label="Rafraîchir le CAPTCHA" onclick="document.getElementById('captcha-img-partner').src='/captcha.php?r='+Math.random()" class="text-xs text-sky-600 font-bold hover:underline">Rafraîchir</button>
                     </div>
-                    <input type="text" name="captcha_code" required placeholder="Entrez les 5 caractères" class="w-full bg-gray-50 border border-gray-300 rounded-xl p-3.5 text-sm focus:ring-2 focus:ring-sky-600 focus:outline-none uppercase font-bold tracking-widest">
+                    <input type="text" id="captcha_code_partner" name="captcha_code" required placeholder="Entrez les 5 caractères" class="w-full bg-gray-50 border border-gray-300 rounded-xl p-3.5 text-sm focus:ring-2 focus:ring-sky-600 focus:outline-none uppercase font-bold tracking-widest">
                 </div>
 
                 <button type="submit" class="w-full bg-sky-600 hover:bg-sky-700 text-white font-extrabold py-4 px-6 rounded-2xl shadow-lg transition text-base">
@@ -137,7 +137,10 @@ require_once __DIR__ . '/includes/header.php';
         </div>
     </div>
 </section>
-
+</main>
+<script>
+document.getElementById('partner-form').addEventListener('sign', ...); // wait, let's keep exact JS listener
+</script>
 <script>
 document.getElementById('partner-form').addEventListener('submit', async function(e) {
     e.preventDefault();

@@ -329,12 +329,12 @@ require_once __DIR__ . '/includes/header.php';
                         </div>
 
                         <div class="space-y-2">
-                            <label class="block text-xs font-bold uppercase text-gray-700">Code de sécurité *</label>
+                            <label for="captcha_code" class="block text-xs font-bold uppercase text-gray-700">Code de sécurité *</label>
                             <div class="flex items-center gap-3">
-                                <img src="/captcha.php" alt="CAPTCHA" id="captcha-img" class="rounded-xl border border-gray-300 h-11 cursor-pointer" onclick="this.src='/captcha.php?r='+Math.random()" title="Cliquer pour rafraîchir l'image">
-                                <button type="button" onclick="document.getElementById('captcha-img').src='/captcha.php?r='+Math.random()" class="text-xs text-red-600 font-bold hover:underline">Rafraîchir</button>
+                                <img src="/captcha.php" width="140" height="45" alt="Code de sécurité CAPTCHA" id="captcha-img" class="rounded-xl border border-gray-300 h-11 cursor-pointer" onclick="this.src='/captcha.php?r='+Math.random()" title="Cliquer pour rafraîchir l'image">
+                                <button type="button" aria-label="Rafraîchir le CAPTCHA" onclick="document.getElementById('captcha-img').src='/captcha.php?r='+Math.random()" class="text-xs text-red-600 font-bold hover:underline">Rafraîchir</button>
                             </div>
-                            <input type="text" name="captcha_code" required placeholder="Entrez les 5 caractères" class="w-full bg-gray-50 border border-gray-300 rounded-xl p-3 text-sm focus:ring-2 focus:ring-red-600 focus:outline-none uppercase font-bold tracking-widest">
+                            <input type="text" id="captcha_code" name="captcha_code" required placeholder="Entrez les 5 caractères" class="w-full bg-gray-50 border border-gray-300 rounded-xl p-3 text-sm focus:ring-2 focus:ring-red-600 focus:outline-none uppercase font-bold tracking-widest">
                         </div>
 
                         <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-extrabold py-4 px-6 rounded-2xl shadow-lg transition text-base">
@@ -381,5 +381,8 @@ document.getElementById('contact-form').addEventListener('submit', async functio
     }
 });
 </script>
+
+</main>
+</main>
 
 <?php require_once __DIR__ . '/includes/footer.php'; ?>

@@ -34,6 +34,11 @@ require_once __DIR__ . '/lang.php';
 
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
+    <!-- Preconnect hints for performance -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VRWHY74XPB"></script>
     <script>

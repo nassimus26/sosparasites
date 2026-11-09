@@ -10,7 +10,7 @@ $pageDesc = "Mentions légales et conditions d'utilisation du site sosparasites.
 
 require_once __DIR__ . '/includes/header.php';
 ?>
-
+<main>
 <div class="py-12 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto text-gray-800">
     <a href="/" class="inline-flex items-center gap-2 text-sm text-red-600 font-bold mb-6 hover:underline">
         <i data-lucide="arrow-left" class="w-4 h-4"></i> Retour à l'accueil
@@ -51,5 +51,5 @@ require_once __DIR__ . '/includes/header.php';
         </section>
     </div>
 </div>
-
+</main>
 <?php require_once __DIR__ . '/includes/footer.php'; ?>
