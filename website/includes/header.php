@@ -32,7 +32,56 @@ require_once __DIR__ . '/lang.php';
     <meta property="og:locale" content="<?= $currentLang === 'en' ? 'en_US' : 'fr_FR' ?>">
     <meta property="og:site_name" content="SOS PARASITES">
 
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" href="/imgs/bugs.png">
+    <link rel="apple-touch-icon" href="/imgs/bugs.png">
+
+    <!-- Structured Data (JSON-LD) for Google Sitelinks & SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "SOS PARASITES",
+      "description": "Expert en traitement et extermination de nuisibles : punaises de lit, cafards, rats, souris, guêpes, puces et moustiques.",
+      "telephone": "+33771502678",
+      "email": "contact@sosparasites.fr",
+      "url": "https://<?= $host ?>",
+      "areaServed": ["Paris", "Île-de-France", "Marseille", "Lyon"],
+      "priceRange": "Sur Devis",
+      "openingHours": "Mo-Su 00:00-24:00"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "SiteNavigationElement",
+          "position": 1,
+          "name": "Contact & Devis",
+          "url": "https://<?= $host ?>/#contact"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "position": 2,
+          "name": "Tarifs",
+          "url": "https://<?= $host ?>/tarifs.php"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "position": 3,
+          "name": "Zones d'Intervention",
+          "url": "https://<?= $host ?>/zones.php"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "position": 4,
+          "name": "Partenaires",
+          "url": "https://<?= $host ?>/nous-rejoindre.php"
+        }
+      ]
+    }
+    </script>
 
     <!-- Preconnect hints for performance -->
     <link rel="preconnect" href="https://cdn.tailwindcss.com">
