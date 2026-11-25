@@ -12,14 +12,14 @@ LOCAL_DIR="website"
 
 # Default to .fr
 TARGET_DOMAIN="sosparasites.fr"
-FTP_USER="sospark"
+FTP_USER="sosparh"
 
 # Check arguments
 for arg in "$@"; do
   case $arg in
     com|--com)
       TARGET_DOMAIN="sosparasites.com"
-      FTP_USER="sosparc"
+      FTP_USER="sosparb"
       ;;
   esac
 done
